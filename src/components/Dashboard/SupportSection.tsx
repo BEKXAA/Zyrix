@@ -50,7 +50,7 @@ const SupportSection: React.FC = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          {/* Contact Options */}
+          
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -104,7 +104,7 @@ const SupportSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* FAQ */}
+         
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

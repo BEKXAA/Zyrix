@@ -28,7 +28,7 @@ const TradingSection: React.FC = () => {
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {/* Market Overview */}
+        
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -77,7 +77,7 @@ const TradingSection: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Trading Actions */}
+         
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

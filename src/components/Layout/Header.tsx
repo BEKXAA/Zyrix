@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, isMobileMenuOpen }) => {
     <header className="bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+         
           <motion.div 
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, isMobileMenuOpen }) => {
             </span>
           </motion.div>
 
-          {/* Desktop Navigation */}
+          
           <nav className="hidden md:flex items-center space-x-8">
             {['Dashboard', 'Trade', 'Learn', 'Videos', 'Support'].map((item) => (
               <motion.a
@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, isMobileMenuOpen }) => {
             ))}
           </nav>
 
-          {/* User Menu */}
+          
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center space-x-2 text-gray-300">
               <User className="h-4 w-4" />
@@ -65,7 +65,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, isMobileMenuOpen }) => {
               <span>Logout</span>
             </motion.button>
 
-            {/* Mobile menu button */}
+           
             <motion.button
               onClick={onMenuToggle}
               className="md:hidden p-2 rounded-lg bg-gray-800 hover:bg-gray-700"

@@ -26,7 +26,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Overlay */}
+       
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -35,7 +35,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             onClick={onClose}
           />
           
-          {/* Menu */}
+         
           <motion.div
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
@@ -54,7 +54,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             </div>
 
             <div className="p-6 space-y-6">
-              {/* User Info */}
+              
               <div className="flex items-center space-x-3 pb-4 border-b border-gray-800">
                 <User className="h-8 w-8 text-purple-500" />
                 <div>
@@ -63,7 +63,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 </div>
               </div>
 
-              {/* Navigation */}
+            
               <nav className="space-y-4">
                 {menuItems.map((item) => (
                   <motion.a
@@ -78,7 +78,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 ))}
               </nav>
 
-              {/* Logout Button */}
+             
               <motion.button
                 onClick={handleLogout}
                 className="flex items-center space-x-2 w-full bg-red-600 hover:bg-red-700 px-4 py-3 rounded-lg transition-colors duration-200"
