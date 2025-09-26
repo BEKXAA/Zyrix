@@ -27,26 +27,6 @@ const LearnSection: React.FC = () => {
     },
   ];
 
-  const videos = [
-    {
-      title: 'Bitcoin Trading Strategies',
-      views: '2.4K views',
-      duration: '15:30',
-      thumbnail: 'https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    },
-    {
-      title: 'DeFi Explained Simply',
-      views: '1.8K views',
-      duration: '12:45',
-      thumbnail: 'https://images.pexels.com/photos/7567486/pexels-photo-7567486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    },
-    {
-      title: 'Portfolio Diversification',
-      views: '3.1K views',
-      duration: '18:20',
-      thumbnail: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    },
-  ];
 
   return (
     <section id="learn" className="py-20">
@@ -133,39 +113,32 @@ const LearnSection: React.FC = () => {
               Video Tutorials
             </h3>
             
-            <div className="space-y-6">
-              {videos.map((video, index) => (
-                <motion.div
-                  key={video.title}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 hover:border-gray-600 transition-all duration-200"
-                  whileHover={{ scale: 1.02, y: -5 }}
+            <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-700 mb-6">
+              <div className="p-4">
+                <h4 className="text-white font-semibold mb-3">Featured YouTube Trading Video</h4>
+                <a
+                  href="https://youtu.be/P-C5VsVJGTo?si=dyHnbvrTJcXUluYb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mb-4 group"
                 >
-                  <div className="flex">
-                    <div className="relative w-32 h-24 flex-shrink-0">
-                      <img
-                        src={video.thumbnail}
-                        alt={video.title}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                        <Play className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="absolute bottom-1 right-1 bg-black/80 text-white text-xs px-1 rounded">
-                        {video.duration}
-                      </div>
-                    </div>
-                    
-                    <div className="p-4 flex-1">
-                      <h4 className="text-white font-medium mb-2">{video.title}</h4>
-                      <p className="text-gray-400 text-sm">{video.views}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
+                  
+                </a>
+                <div className="relative w-full" style={{ paddingBottom: '56.25%', height: 0 }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/P-C5VsVJGTo?si=w6CyPB6wC_yyaP0L"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
             </div>
+
+            
           </motion.div>
         </div>
       </div>

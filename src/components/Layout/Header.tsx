@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ onMenuToggle, isMobileMenuOpen }) => {
 
           
           <nav className="hidden md:flex items-center space-x-8">
-            {['Dashboard', 'Trade', 'Learn', 'Videos', 'Support'].map((item) => (
+            {['Home', 'Trade', 'Learn', 'Videos', 'Support'].map((item) => (
               <motion.a
                 key={item}
                 href={`#${item.toLowerCase()}`}

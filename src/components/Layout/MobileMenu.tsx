@@ -20,7 +20,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
     }
   };
 
-  const menuItems = ['Dashboard', 'Trade', 'Learn', 'Videos', 'Support'];
+  const menuItems = ['Home', 'Trade', 'Learn', 'Videos', 'Support'];
 
   return (
     <AnimatePresence>
