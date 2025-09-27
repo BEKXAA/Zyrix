@@ -1,7 +1,7 @@
 import React from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import AuthPage from './components/Auth/AuthPage';
-import Dashboard from './components/Dashboard/Dashboard';
+import Homepage from './components/Homepage/Homepage';
 
 const AppContent: React.FC = () => {
   const { currentUser, loading } = useAuth();
@@ -14,7 +14,7 @@ const AppContent: React.FC = () => {
     );
   }
 
-  return currentUser ? <Dashboard /> : <AuthPage />;
+  return currentUser ? <Homepage /> : <AuthPage />;
 };
 
 function App() {

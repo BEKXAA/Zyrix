@@ -6,7 +6,7 @@ import TradingSection from './TradingSection';
 import LearnSection from './LearnSection';
 import SupportSection from './SupportSection';
 
-const Dashboard: React.FC = () => {
+const Homepage: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -44,4 +44,4 @@ const Dashboard: React.FC = () => {
   );
 };
 
-export default Dashboard;
+export default Homepage;
